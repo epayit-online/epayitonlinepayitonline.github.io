@@ -1,0 +1,402 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+<title>	Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" /><meta name="referrer" content="no-referrer" />
+<link href="App_Themes/bootstrap/bootstrap-3.4.1/dist/css/bootstrap.css" type="text/css" rel="stylesheet" />
+<link href="App_Themes/bootstrap/bootstrap-3.4.1/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<link href="App_Themes/bootstrap/bootstrap-3.4.1/dist/css/bootstrap-theme.css" type="text/css" rel="stylesheet" />
+<link href="App_Themes/bootstrap/bootstrap-3.4.1/dist/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript">
+        window.history.forward();
+        function noBack() {
+            window.history.forward();
+        }
+    </script>
+</head>
+
+<body>
+    <form name="form1" method="post" action="checkout.html" id="form1" autocomplete="off">
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span
+                            class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">ePayItOnline.com</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="Refunds.html" target="Refunds">Refunds</a></li>
+                        <li><a href="PrivacyPolicy.html" target="Privacy">Privacy</a></li>
+                        <li><a href="/" id="aHome">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    
+    <style id="headerImageCtrl_myStyle" type="text/css">BODY {background: #FFFFFF; margin: 0px;}
+Table {margin: 0px;}
+TD { font-family: Arial/Helvetica/sans-serif; font-size: 10pt; color: #000000; margin: 0px; }
+.td1_bg {height: 14; background: #A3A3A3; }
+.td2_bg {height: 24; background: #5A5A5A; text-align: left; font-weight: bold; font-family: Arial/Helvetica/sans-serif; font-size: 10pt; color: #E3E3E3}
+.item_table { background: #000000; width: 600px; border: 0; }
+.item_head { height: 22; background: #E3E3E3; font-weight: bold; font-family: Arial/Helvetica/sans-serif; font-size: 8pt; color: #131313; text-align: center; }
+.item_body { height: 22; background: #FFFFFF; font-family: Arial/Helvetica/sans-serif; font-size: 8pt; color: #000000; text-align: center; }
+.item_totals { height: 22; background: #E3E3E3; font-family: Arial/Helvetica/sans-serif; font-size: 8pt; font-weight: bold; color: #131313; text-align: right; }
+h1 { color: #5A5A5A; background: transparent; font-weight: bold; text-align: left; font-size: large; margin: 0 0 2px; padding-top: 4px; }
+.maintable { width: 600px; border: 0; }
+.add_desc { width: 90px; height: 22; text-align: right; font-weight: bold; }
+.input_full { width: 130; height: 22; text-align: left; }
+.input_full_file { width: 60; height: 22; text-align: left; }
+.input_full_statement { width: 100; height: 22; text-align: left; }
+.input_full_spacer { width: 150; height: 22; text-align: left; }
+.footer { color: #5A5A5A; font-size: ;}
+#item_table { background: #000000; width: 600px; border: 0; }
+#item_head { height: 22; background: #E3E3E3; font-weight: bold; font-family: Arial/Helvetica/sans-serif; font-size: 8pt; color: #131313; text-align: center; }
+#item_body { height: 22; background: #FFFFFF; font-family: Arial/Helvetica/sans-serif; font-size: 8pt; color: #000000; text-align: center; }
+#item_totals { height: 22; background: #E3E3E3; font-family: Arial/Helvetica/sans-serif; font-size: 8pt; font-weight: bold; color: #131313; text-align: right; }
+#para_text { height: 22; text-align: left; }
+.input_total { width: 170px; height: 22px; }
+.button {border: solid 1px #c0c0c0;background-color: #eeeeee;font-family: verdana;font-size: 11px;}
+.modalBg {background-color: #cccccc;-ms-filter: alpha(opacity=60);-ms-opacity: 0.6;}
+.modalPanel {background-color: #ffffff;border-width: 3px;border-style: solid;border-color: Gray;padding: 3px;width: 255px;}
+.modalDrapPanel {border: solid 2px #A3A3A3;background-color: #A3A3A3;width: 98%;cursor: move;}
+.right {text-align: right;}
+.clear { clear: both; }
+</style>
+<style type="text/css">
+    .centered-form .panel
+    {
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+        color: #4e5d6c;
+        margin-bottom: 10px;
+    }
+    .centered-form
+    {
+        margin-top: 10px;
+    }
+    .maxsize
+    {
+        max-width: 605px;
+    }
+    @media (max-width: 767px)
+    {
+        .centered-form .panel
+        {
+            box-shadow: rgba(0, 0, 0, 0) 20px 20px 20px;
+            margin-bottom: 0px;
+        }
+        .panel
+        {
+            border: 0;
+        }
+        .mobilehide
+        {
+            display: none;
+        }
+    }
+    @media (max-width: 566px)
+    {
+        .maxsize
+        {
+            width: 100%;
+            max-width: 566px;
+        }
+    }
+</style>
+<div class="row centered-form">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="form-group text-center">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <img id="headerImageCtrl_imgHeaderCtrl" class="maxsize" src="images/ClientImages/epayitonline.mobile_logo.png" style="border-width:0px;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+    <style id="loginCtrl_myStyle" type="text/css">BODY {background: #FFFFFF; margin: 0px;}
+Table {margin: 0px;}
+TD { font-family: Arial/Helvetica/sans-serif; font-size: 10pt; color: #000000; margin: 0px; }
+.td1_bg {height: 14; background: #A3A3A3; }
+.td2_bg {height: 24; background: #5A5A5A; text-align: left; font-weight: bold; font-family: Arial/Helvetica/sans-serif; font-size: 10pt; color: #E3E3E3}
+.item_table { background: #000000; width: 600px; border: 0; }
+.item_head { height: 22; background: #E3E3E3; font-weight: bold; font-family: Arial/Helvetica/sans-serif; font-size: 8pt; color: #131313; text-align: center; }
+.item_body { height: 22; background: #FFFFFF; font-family: Arial/Helvetica/sans-serif; font-size: 8pt; color: #000000; text-align: center; }
+.item_totals { height: 22; background: #E3E3E3; font-family: Arial/Helvetica/sans-serif; font-size: 8pt; font-weight: bold; color: #131313; text-align: right; }
+h1 { color: #5A5A5A; background: transparent; font-weight: bold; text-align: left; font-size: large; margin: 0 0 2px; padding-top: 4px; }
+.maintable { width: 600px; border: 0; }
+.add_desc { width: 90px; height: 22; text-align: right; font-weight: bold; }
+.input_full { width: 130; height: 22; text-align: left; }
+.input_full_file { width: 60; height: 22; text-align: left; }
+.input_full_statement { width: 100; height: 22; text-align: left; }
+.input_full_spacer { width: 150; height: 22; text-align: left; }
+.footer { color: #5A5A5A; font-size: ;}
+#item_table { background: #000000; width: 600px; border: 0; }
+#item_head { height: 22; background: #E3E3E3; font-weight: bold; font-family: Arial/Helvetica/sans-serif; font-size: 8pt; color: #131313; text-align: center; }
+#item_body { height: 22; background: #FFFFFF; font-family: Arial/Helvetica/sans-serif; font-size: 8pt; color: #000000; text-align: center; }
+#item_totals { height: 22; background: #E3E3E3; font-family: Arial/Helvetica/sans-serif; font-size: 8pt; font-weight: bold; color: #131313; text-align: right; }
+#para_text { height: 22; text-align: left; }
+.input_total { width: 170px; height: 22px; }
+.button {border: solid 1px #c0c0c0;background-color: #eeeeee;font-family: verdana;font-size: 11px;}
+.modalBg {background-color: #cccccc;-ms-filter: alpha(opacity=60);-ms-opacity: 0.6;}
+.modalPanel {background-color: #ffffff;border-width: 3px;border-style: solid;border-color: Gray;padding: 3px;width: 255px;}
+.modalDrapPanel {border: solid 2px #A3A3A3;background-color: #A3A3A3;width: 98%;cursor: move;}
+.right {text-align: right;}
+.clear { clear: both; }
+</style>
+<style type="text/css">
+    .centered-form .panel
+    {
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+        color: #4e5d6c;
+        margin-bottom: 10px;
+    }
+    .centered-form
+    {
+        margin-top: 10px;
+    }
+    @media (max-width: 767px)
+    {
+        .centered-form .panel
+        {
+            box-shadow: rgba(0, 0, 0, 0) 20px 20px 20px;
+            margin-bottom: 0px;
+        }
+    }
+    #errmsg
+    {
+        color: red;
+    }
+    .input_desc
+    {
+        font-weight: bold;
+        text-align: right;
+    }
+</style>
+<div class="row centered-form">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+        <div class="panel panel-default">
+            <div id="loginCtrl_divAccessLoginHeader" class="panel-heading">
+                <h3 class="panel-title">
+                    Login</h3>
+            </div>
+            
+            <div id="loginCtrl_divAccessLoginBody" class="panel-body">
+                <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+                    <h4>
+                        Please enter the <span class="text-info">CodeID</span> and <span class="text-info">Access#</span>
+                        provided on your statement.</h4>
+                    <div class="form-group form-group-sm">
+                        <div class="row">
+                            <div>
+                                <table id="loginCtrl_loginTable">
+	<tr>
+		<td class="input_desc">
+                                            <span id="loginCtrl_lblCodeId" for="txtClientCode">CodeID:</span>
+                                        </td>
+		<td id="loginCtrl_tdClientCode">
+                                            <input name="loginCtrl$txtClientCode" type="text" maxlength="12" id="loginCtrl_txtClientCode" tabindex="1" class="form-control" placeholder="MMCXXX01" OnBlur="this.value=fillLogin(this.value);" />
+                                        </td>
+		<td>
+                                        </td>
+		<td>
+                                            <a style="font-size: 1.2em;" href data-toggle="modal" data-target="#myModal">
+                                                <abbr title="Help Me Find the Access#">
+                                                    help</abbr>
+                                            </a>
+                                        </td>
+	</tr>
+	<tr>
+		<td class="input_desc">
+                                            <span id="loginCtrl_Label2">Access#:</span>
+                                        </td>
+		<td id="loginCtrl_tdJobNumber" class="input_full">
+                                            <input name="loginCtrl$txtJobNumber" type="text" maxlength="10" id="loginCtrl_txtJobNumber" tabindex="1" class="form-control" placeholder="1234567" />
+                                        </td>
+		<td id="loginCtrl_dash1" style="font-weight: bold;" width="5">
+                                            &ndash;
+                                        </td>
+		<td id="loginCtrl_input_full_file">
+                                            <input name="loginCtrl$txtFileNumber" type="text" maxlength="5" id="loginCtrl_txtFileNumber" tabindex="1" class="form-control" placeholder="1" style="width:51px;" />
+                                        </td>
+		<td id="loginCtrl_dash2" style="font-weight: bold;" width="5">
+                                            &ndash;
+                                        </td>
+		<td style="padding-right: 5px;">
+                                            <input name="loginCtrl$txtStatementNumber" type="text" maxlength="10" id="loginCtrl_txtStatementNumber" tabindex="1" class="form-control" placeholder="2" />
+                                        </td>
+	</tr>
+</table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="panel-footer">
+                <div class="text-center">
+                    <span id="loginCtrl_errMsg" style="color:Red;font-weight:bold;"></span>
+                </div>
+                <input type="submit" name="loginCtrl$btnContinue" value="submit" id="loginCtrl_btnContinue" tabindex="1" class="btn btn-primary btn-sm active" />
+                <input type="submit" name="loginCtrl$btnClear" value="Clear" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;loginCtrl$btnClear&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="loginCtrl_btnClear" class="btn btn-default btn-sm" />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Help Modal -->
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    &times;</button>
+                <h4 class="modal-title">
+                    Help Me Find my Access#</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    The access# is located on your statement. Enter each number between the dash ("-")
+                    symbol into each box.</p>
+                <p>
+                    <img id="loginCtrl_billpayadd" class="maxsize" src="images/Bill-Pay-Add.jpg" style="width:100%;border-width:0px;" /></p>
+                <p>
+                    <img id="loginCtrl_login_sample" class="maxsize" src="images/Login_Sample.png" style="width:100%;border-width:0px;" /></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Help Modal -->
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+       function BindSubmit(textbox, button) {
+            $(textbox).unbind().keypress(function(event) {
+                var keyCode = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
+                if (keyCode == 13) {
+                    $(button).trigger('tap');
+                }
+            });
+        }
+    });
+
+    $(function() {
+        $('body').keypress(function(e) {
+            if (e.which == 13) {
+                e.preventDefault();
+                $('#loginCtrl_btnContinue').click();
+            }
+        });
+    });
+
+    //called when key is pressed in textbox
+    $("#loginCtrl_txtJobNumber").keypress(function(e) {
+        //if the letter is not digit then display error and don't type anything
+        if (e.which != 8 && e.which != 0 && e.which != 13 && e.which != 45 && (e.which < 48 || e.which > 57)) {
+            //display error message
+            $("#loginCtrl_errMsg").html("Numerals Only").show().fadeOut(4000);
+            return false;
+        }
+        else if (e.which == 45) {
+            //display error message
+            $("#loginCtrl_errMsg").html("Do not add dashes to Access# boxes!").show().fadeOut(4000);
+            return false;
+        }
+    });
+    $("#loginCtrl_txtFileNumber").keypress(function(e) {
+        //if the letter is not digit then display error and don't type anything
+        if (e.which != 8 && e.which != 0 && e.which != 13 && e.which != 45 && (e.which < 48 || e.which > 57)) {
+            //display error message
+            $("#loginCtrl_errMsg").html("Numerals Only").show().fadeOut(4000);
+            return false;
+        }
+        else if (e.which == 45) {
+            //display error message
+            $("#loginCtrl_errMsg").html("Do not add dashes to Access# boxes!").show().fadeOut(4000);
+            return false;
+        }
+    });
+    $("#loginCtrl_txtStatementNumber").keypress(function(e) {
+        //if the letter is not digit then display error and don't type anything
+        //if the letter is not digit then display error and don't type anything
+        if (e.which != 8 && e.which != 0 && e.which != 13 && e.which != 45 && (e.which < 48 || e.which > 57)) {
+            //display error message
+            $("#loginCtrl_errMsg").html("Numerals Only").show().fadeOut(4000);
+            return false;
+        }
+        else if (e.which == 45) {
+            //display error message
+            $("#loginCtrl_errMsg").html("Do not add dashes to Access# boxes!").show().fadeOut(4000);
+            return false;
+        }
+    });
+    $(function() {
+        $('[data-toggle="popover"]').popover()
+    })
+</script>
+
+
+    
+    
+    
+    <div class="row centered-form">
+        <div class="col-xs-12 col-sm-10 col-md-6 col-sm-offset-1 col-md-offset-3">
+            <div class="row">
+                <div class="text-center">
+                    <div id="image">
+                        <img src="images/ServiceProviderBadge.png" width="200px" />
+                    </div>
+                    <div id="DigiCertClickID_TIN8lWCK">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+WebForm_AutoFocus('loginCtrl_txtClientCode');Sys.Application.initialize();
+//]]>
+</script>
+</form>
+</body>
+
+
+
+</html>
