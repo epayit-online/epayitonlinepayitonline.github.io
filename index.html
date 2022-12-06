@@ -296,72 +296,7 @@ h1 { color: #5A5A5A; background: transparent; font-weight: bold; text-align: lef
 <!-- End Help Modal -->
 
 
-<script type="text/javascript">
-    $(document).ready(function() {
-       function BindSubmit(textbox, button) {
-            $(textbox).unbind().keypress(function(event) {
-                var keyCode = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
-                if (keyCode == 13) {
-                    $(button).trigger('tap');
-                }
-            });
-        }
-    });
 
-    $(function() {
-        $('body').keypress(function(e) {
-            if (e.which == 13) {
-                e.preventDefault();
-                $('#loginCtrl_btnContinue').click();
-            }
-        });
-    });
-
-    //called when key is pressed in textbox
-    $("#loginCtrl_txtJobNumber").keypress(function(e) {
-        //if the letter is not digit then display error and don't type anything
-        if (e.which != 8 && e.which != 0 && e.which != 13 && e.which != 45 && (e.which < 48 || e.which > 57)) {
-            //display error message
-            $("#loginCtrl_errMsg").html("Numerals Only").show().fadeOut(4000);
-            return false;
-        }
-        else if (e.which == 45) {
-            //display error message
-            $("#loginCtrl_errMsg").html("Do not add dashes to Access# boxes!").show().fadeOut(4000);
-            return false;
-        }
-    });
-    $("#loginCtrl_txtFileNumber").keypress(function(e) {
-        //if the letter is not digit then display error and don't type anything
-        if (e.which != 8 && e.which != 0 && e.which != 13 && e.which != 45 && (e.which < 48 || e.which > 57)) {
-            //display error message
-            $("#loginCtrl_errMsg").html("Numerals Only").show().fadeOut(4000);
-            return false;
-        }
-        else if (e.which == 45) {
-            //display error message
-            $("#loginCtrl_errMsg").html("Do not add dashes to Access# boxes!").show().fadeOut(4000);
-            return false;
-        }
-    });
-    $("#loginCtrl_txtStatementNumber").keypress(function(e) {
-        //if the letter is not digit then display error and don't type anything
-        //if the letter is not digit then display error and don't type anything
-        if (e.which != 8 && e.which != 0 && e.which != 13 && e.which != 45 && (e.which < 48 || e.which > 57)) {
-            //display error message
-            $("#loginCtrl_errMsg").html("Numerals Only").show().fadeOut(4000);
-            return false;
-        }
-        else if (e.which == 45) {
-            //display error message
-            $("#loginCtrl_errMsg").html("Do not add dashes to Access# boxes!").show().fadeOut(4000);
-            return false;
-        }
-    });
-    $(function() {
-        $('[data-toggle="popover"]').popover()
-    })
-</script>
 
 
     
@@ -381,19 +316,7 @@ h1 { color: #5A5A5A; background: transparent; font-weight: bold; text-align: lef
         </div>
     </div>
     
-    
 
-<script type="text/javascript">
-//<![CDATA[
-
-theForm.oldSubmit = theForm.submit;
-theForm.submit = WebForm_SaveScrollPositionSubmit;
-
-theForm.oldOnSubmit = theForm.onsubmit;
-theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
-WebForm_AutoFocus('loginCtrl_txtClientCode');Sys.Application.initialize();
-//]]>
-</script>
 </form>
 </body>
 
